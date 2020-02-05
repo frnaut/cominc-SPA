@@ -1,0 +1,22 @@
+<div class='m-5'>
+    <div class='row'>
+        <div class='col-5'>
+            <img class="animated fadeIn fast" [src]="hero.img" [alt]="hero.nombre">
+        </div>
+
+        <div class='col-7 animated fadeIn'>
+            <div>
+                <h1>{{ hero.nombre | uppercase}}</h1>
+                <hr>
+                <p>{{ hero.bio }}</p>
+                <p>Aparicion: <strong > {{ hero.aparicion }} </strong></p>
+            </div>
+            <div>
+                <span class="font-weight-bold" style="font-size: 30px;">{{ hero.casa }}</span>
+            </div>
+               
+            <a class="btn btn-outline-danger btn-block mt-5" [routerLink]="['/heros']" >Volver atras...</a>
+        </div>
+    </div>
+
+</div>
